@@ -1,0 +1,6 @@
+package com.springboot.app.usuarios;
+
+@Configuration
+public class RepositoryConfig implements RepositoryRestConfigurer{
+
+}

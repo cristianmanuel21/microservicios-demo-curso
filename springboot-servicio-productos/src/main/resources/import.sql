@@ -1,0 +1,11 @@
+insert into productos(nombre,precio,create_at) values('Panasonic',800,now());
+insert into productos(nombre,precio,create_at) values('Sony',700,now());
+insert into productos(nombre,precio,create_at) values('Apple',1000,now());
+insert into productos(nombre,precio,create_at) values('HP',1800,now());
+insert into productos(nombre,precio,create_at) values('Nike',320,now());
+insert into productos(nombre,precio,create_at) values('Adidas',180,now());
+insert into productos(nombre,precio,create_at) values('Rebook',150,now());
+insert into productos(nombre,precio,create_at) values('Nike',180,now()); 
+insert into productos(nombre,precio,create_at) values('Puma',110,now()); 
+insert into productos(nombre,precio,create_at) values('Super Reno',70,now()); 
+insert into productos(nombre,precio,create_at) values('Tigre',65,now());  

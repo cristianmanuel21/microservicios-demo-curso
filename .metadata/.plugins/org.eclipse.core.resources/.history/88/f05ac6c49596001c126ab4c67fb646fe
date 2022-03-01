@@ -1,0 +1,3 @@
+artifactId=springboot-servicio-usuarios-common
+groupId=com.springboot.app.usuarios.common
+version=0.0.1-SNAPSHOT

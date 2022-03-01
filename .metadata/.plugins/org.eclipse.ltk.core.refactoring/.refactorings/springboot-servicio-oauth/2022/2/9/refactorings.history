@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;springboot-servicio-oauth&apos;&#x0D;&#x0A;- Original project: &apos;springboot-servicio-oauth&apos;&#x0D;&#x0A;- Original element: &apos;springboot-servicio-oauth/src/main/java/com.springboot.app.oauth.clients&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.springboot.app.oauth.clients" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1645840990013" subPackages="false" version="1.0"/>
+</session>

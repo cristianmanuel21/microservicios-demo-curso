@@ -1,0 +1,11 @@
+package com.springboot.app.oauth.client;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name="servicio-usuarios")
+public interface UsuarioFeignClient {
+	
+	@GetMapping("usuarios/buscar-usernames")
+	public Usuario findByUsername(@RequestParam String username);
+
+}

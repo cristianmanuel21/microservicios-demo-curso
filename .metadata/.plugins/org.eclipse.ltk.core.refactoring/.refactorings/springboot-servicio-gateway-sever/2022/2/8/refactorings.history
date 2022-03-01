@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.springboot.app.gateway.filters.GlobalFilter.java&apos; to &apos;EjemploGlobalFilter.java&apos;&#x0D;&#x0A;- Original project: &apos;springboot-servicio-gateway-sever&apos;&#x0D;&#x0A;- Original element: &apos;com.springboot.app.gateway.filters.GlobalFilter.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.springboot.app.gateway.filters.EjemploGlobalFilter.java&apos;" description="Rename compilation unit &apos;GlobalFilter.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.springboot.app.gateway.filters{GlobalFilter.java" name="EjemploGlobalFilter.java" references="false" stamp="1644891733088" version="1.0"/>
+</session>
