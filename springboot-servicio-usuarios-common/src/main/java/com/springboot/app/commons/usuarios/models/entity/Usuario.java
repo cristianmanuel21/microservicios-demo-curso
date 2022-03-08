@@ -44,6 +44,19 @@ public class Usuario implements Serializable {
 	private String email;
 	
 	
+	private Integer getIntentos;
+	
+	
+	
+	
+	public Integer getGetIntentos() {
+		return getIntentos;
+	}
+
+	public void setGetIntentos(Integer getIntentos) {
+		this.getIntentos = getIntentos;
+	}
+
 	public List<Rol> getRoles() {
 		return roles;
 	}

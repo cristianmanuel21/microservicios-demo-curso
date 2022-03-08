@@ -1,0 +1,6 @@
+package com.springboot.app.gateway.security;
+
+@Component
+public class JwtAuthenticationFilter {
+
+}

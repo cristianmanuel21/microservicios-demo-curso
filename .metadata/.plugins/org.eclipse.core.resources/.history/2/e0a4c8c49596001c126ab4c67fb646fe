@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.springboot.app.usuarios.common.SpringbootServicioUsuariosCommonApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.185 s <<< FAILURE! - in com.springboot.app.usuarios.common.SpringbootServicioUsuariosCommonApplicationTests
-com.springboot.app.usuarios.common.SpringbootServicioUsuariosCommonApplicationTests  Time elapsed: 0.184 s  <<< ERROR!
-java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
-

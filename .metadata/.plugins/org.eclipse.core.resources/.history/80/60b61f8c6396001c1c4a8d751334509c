@@ -1,7 +1,0 @@
-package com.springboot.app.usuarios.models.dao;
-
-import org.springframework.data.repository.PagingAndSortingRepository;
-
-public interface UsuarioDao extends PagingAndSortingRepository<Usuario, Long>{
-
-}

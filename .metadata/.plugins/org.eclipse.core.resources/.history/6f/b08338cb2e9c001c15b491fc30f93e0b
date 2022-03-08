@@ -1,0 +1,8 @@
+package com.springboot.app.zuul.oauth;
+
+
+@Configuration
+@EnableResourceServer
+public class ResourceServerConfig {
+
+}

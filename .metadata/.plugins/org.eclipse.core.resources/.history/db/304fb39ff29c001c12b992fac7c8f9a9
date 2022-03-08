@@ -1,0 +1,10 @@
+package com.springboot.app.oauth.security.event;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class AuthenticationSuccessErrorHandler {
+	
+	
+
+}

@@ -52,3 +52,19 @@ spring:
           - AddRequestHeader=token-request, 123456
           - AddResponseHeader=token-response, 12345678
           - AddRequestParameter=nombre, cristian
+          
+      - id: servicio-oauth
+        uri: lb://servicio-oauth
+        predicates:
+          - Path=/api/security/**
+        filters:
+          - StripPrefix=2
+          
+          
+      - id: servicio-usuarios
+        uri: lb://servicio-usuarios
+        predicates:
+          - Path=/api/usuarios/**
+        filters:
+          - StripPrefix=2
+          

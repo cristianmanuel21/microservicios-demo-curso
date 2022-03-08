@@ -1,2 +1,0 @@
-insert into usuarios (username,password,enabled,nombre,apellido,email) values ('cristianmanuel.21','123456',1,'Cristian','Llanos','cristianmanuel.21@gmail.com');
-insert into usuarios (username,password,enabled,nombre,apellido,email) values ('paulino27','peru1234',1,'Paul','Llanos','paul_ll3@gmail.com');

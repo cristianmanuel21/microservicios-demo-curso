@@ -1,9 +1,0 @@
-insert into usuarios (username,password,enabled,nombre,apellido,email) values ('paul','peru1234',1,'Paul','Llanos','paul_ll3@gmail.com');
-insert into usuarios (username,password,enabled,nombre,apellido,email) values ('admin','123456',1,'Cristian','Llanos','cristianmanuel.21@gmail.com');
-
-insert into roles (nombre) values ('ROLE_USER');
-insert into roles (nombre) values ('ROLE_ADMIN');
-
-insert into usuarios_roles (usuario_id,rol_id) values (1,1);
-insert into usuarios_roles (usuario_id,rol_id) values (2,2);
-insert into usuarios_roles (usuario_id,rol_id) values (2,1);

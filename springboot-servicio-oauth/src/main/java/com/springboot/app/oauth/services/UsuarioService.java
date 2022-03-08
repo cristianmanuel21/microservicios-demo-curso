@@ -17,9 +17,11 @@ import org.springframework.stereotype.Service;
 import com.springboot.app.commons.usuarios.models.entity.Usuario;
 import com.springboot.app.oauth.client.UsuarioFeignClient;
 
+import feign.FeignException;
+
 //una clase especial propia de SpringSecurity para autenticacion, donde usamos el Feign escrito anteriormente
 @Service
-public class UsuarioService implements UserDetailsService{
+public class UsuarioService implements IUsuarioService, UserDetailsService{
 	
 	private Logger log=LoggerFactory.getLogger(UsuarioService.class);
 	
@@ -29,27 +31,39 @@ public class UsuarioService implements UserDetailsService{
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		
+	try {
 		//este metodo retorna (UserDetails) que es un tipo de usuario de Spring Security autenticado
 		Usuario usuario=client.findByUsername(username);
-		
-		if (usuario==null) {
-			log.error("Error en el login, el usuario "+username+" no existe");
-			
-			throw new UsernameNotFoundException
-			("Error en el login, el usuario "+username+" no existe");
-		}
-		
-		
 		List<GrantedAuthority> authorities=usuario.getRoles()
 				.stream()
 				.map(role-> new SimpleGrantedAuthority(role.getNombre()))
 				.peek(auth-> log.info("Rol "+auth.getAuthority()))
 				.collect(Collectors.toList());
 		
-		log.info("Usuario Autentificado "+username);
+		log.info("Usuario Autentificado "+username+" con clave "+usuario.getPassword());
+		
 		
 		return new User(usuario.getUsername(), usuario.getPassword()
 				, usuario.getEnabled(), true, true, true, authorities  );
+		
+	}catch(FeignException e) {
+		log.error("Error en el login, el usuario "+username+" no existe");
+		throw new UsernameNotFoundException
+		("Error en el login, el usuario "+username+" no existe");
+	}	
+	
+	}
+
+	@Override
+	public Usuario findByUsername(String username) {
+		// TODO Auto-generated method stub
+		return client.findByUsername(username);
+	}
+
+	@Override 
+	public Usuario update(Usuario usuario, Long id) { //para actualizar los intentos 
+		return client.updateUsuario(usuario, id);
 	}
 
 }

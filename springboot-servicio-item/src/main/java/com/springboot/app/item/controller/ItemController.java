@@ -47,11 +47,12 @@ public class ItemController {
 	
 	@Autowired
 	private Environment env;
-	
+
+	/*
 	
 	@Value("${configuracion.texto}")
 	private String texto;
-	
+	*/
 	
 	
 	@Autowired
@@ -142,7 +143,7 @@ public class ItemController {
 	}
 	
 	
-	
+	/*
 	
 	@GetMapping("/obtener-config")
 	public ResponseEntity<?> obtenerConfiguracion(@Value("${server.port}") String puerto){
@@ -159,6 +160,7 @@ public class ItemController {
 		
 		return new ResponseEntity<Map<String,String>>(json,HttpStatus.OK);
 	}
+	*/
 
 
 }
